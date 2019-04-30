@@ -8,6 +8,17 @@
 
 import UIKit
 
+// 1. Create Protocol
+// 2. Weak Var Delegate of protocol type
+// 3. Call delegate method in IBAction
+// 4. Assign the delegate
+
+protocol NoteTableViewCellDelegate: AnyObject {
+    func shareNote(for cell: NoteTableViewCell)
+    
+}
+
+
 class NoteTableViewCell: UITableViewCell {
    
     
@@ -19,13 +30,15 @@ class NoteTableViewCell: UITableViewCell {
         }
     }
     
+    weak var delegate: NoteTableViewCellDelegate?
+    
     private func updateViews() {
         guard let note = self.note else { return }
         self.noteLabel.text = note.text
     }
 
     @IBAction func shareBtnTapped(_ sender: UIButton) {
-        
+        self.delegate?.shareNote(for: self)
     }
     
     

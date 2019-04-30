@@ -8,7 +8,9 @@
 
 import UIKit
 
-class NotesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class NotesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, NoteTableViewCellDelegate {
+    
+    
     
     let notesController = NotesController()
 
@@ -38,8 +40,24 @@ class NotesViewController: UIViewController, UITableViewDataSource, UITableViewD
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "NoteCell", for: indexPath)
         
+        guard let noteCell = cell as? NoteTableViewCell else { return cell }
+        let note = notesController.notes[indexPath.row]
+        noteCell.note = note
+        noteCell.delegate = self
+        
         
         return cell
     }
+    
+    func shareNote(for cell: NoteTableViewCell) {
+        guard let note = cell.note else { return }
+        
+        let text = note.text
+        
+        let activityController = UIActivityViewController(activityItems: [text], applicationActivities: nil)
+        self.present(activityController, animated: true, completion: nil)
+    }
 
+    
+    
 }
