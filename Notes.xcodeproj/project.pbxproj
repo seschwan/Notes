@@ -12,6 +12,9 @@
 		EF2F50ED2277DE9200F5E345 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF2F50EC2277DE9200F5E345 /* Assets.xcassets */; };
 		EF2F50F02277DE9200F5E345 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF2F50EE2277DE9200F5E345 /* LaunchScreen.storyboard */; };
 		EF2F50F82277E9C200F5E345 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2F50F72277E9C200F5E345 /* NotesViewController.swift */; };
+		EF2F50FA2277F06400F5E345 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2F50F92277F06400F5E345 /* Note.swift */; };
+		EF2F50FC2277F10C00F5E345 /* NoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2F50FB2277F10C00F5E345 /* NoteController.swift */; };
+		EF2F50FE2277F35600F5E345 /* NoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2F50FD2277F35600F5E345 /* NoteTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		EF2F50EF2277DE9200F5E345 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF2F50F12277DE9200F5E345 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF2F50F72277E9C200F5E345 /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		EF2F50F92277F06400F5E345 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		EF2F50FB2277F10C00F5E345 /* NoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteController.swift; sourceTree = "<group>"; };
+		EF2F50FD2277F35600F5E345 /* NoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,9 @@
 				EF2F50F72277E9C200F5E345 /* NotesViewController.swift */,
 				EF2F50E52277DE9100F5E345 /* AppDelegate.swift */,
 				EF2F50E92277DE9100F5E345 /* Main.storyboard */,
+				EF2F50FD2277F35600F5E345 /* NoteTableViewCell.swift */,
+				EF2F50F92277F06400F5E345 /* Note.swift */,
+				EF2F50FB2277F10C00F5E345 /* NoteController.swift */,
 				EF2F50EC2277DE9200F5E345 /* Assets.xcassets */,
 				EF2F50EE2277DE9200F5E345 /* LaunchScreen.storyboard */,
 				EF2F50F12277DE9200F5E345 /* Info.plist */,
@@ -136,7 +145,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF2F50F82277E9C200F5E345 /* NotesViewController.swift in Sources */,
+				EF2F50FC2277F10C00F5E345 /* NoteController.swift in Sources */,
 				EF2F50E62277DE9100F5E345 /* AppDelegate.swift in Sources */,
+				EF2F50FE2277F35600F5E345 /* NoteTableViewCell.swift in Sources */,
+				EF2F50FA2277F06400F5E345 /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
