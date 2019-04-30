@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		EF2F50E62277DE9100F5E345 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2F50E52277DE9100F5E345 /* AppDelegate.swift */; };
-		EF2F50E82277DE9100F5E345 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2F50E72277DE9100F5E345 /* ViewController.swift */; };
 		EF2F50EB2277DE9100F5E345 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF2F50E92277DE9100F5E345 /* Main.storyboard */; };
 		EF2F50ED2277DE9200F5E345 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF2F50EC2277DE9200F5E345 /* Assets.xcassets */; };
 		EF2F50F02277DE9200F5E345 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF2F50EE2277DE9200F5E345 /* LaunchScreen.storyboard */; };
+		EF2F50F82277E9C200F5E345 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2F50F72277E9C200F5E345 /* NotesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EF2F50E22277DE9100F5E345 /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF2F50E52277DE9100F5E345 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EF2F50E72277DE9100F5E345 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EF2F50EA2277DE9100F5E345 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EF2F50EC2277DE9200F5E345 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF2F50EF2277DE9200F5E345 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF2F50F12277DE9200F5E345 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF2F50F72277E9C200F5E345 /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +54,8 @@
 		EF2F50E42277DE9100F5E345 /* Notes */ = {
 			isa = PBXGroup;
 			children = (
+				EF2F50F72277E9C200F5E345 /* NotesViewController.swift */,
 				EF2F50E52277DE9100F5E345 /* AppDelegate.swift */,
-				EF2F50E72277DE9100F5E345 /* ViewController.swift */,
 				EF2F50E92277DE9100F5E345 /* Main.storyboard */,
 				EF2F50EC2277DE9200F5E345 /* Assets.xcassets */,
 				EF2F50EE2277DE9200F5E345 /* LaunchScreen.storyboard */,
@@ -135,7 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF2F50E82277DE9100F5E345 /* ViewController.swift in Sources */,
+				EF2F50F82277E9C200F5E345 /* NotesViewController.swift in Sources */,
 				EF2F50E62277DE9100F5E345 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
